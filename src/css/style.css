@@ -1,0 +1,111 @@
+body {
+    color: #999;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px; 
+  gap:10px;
+}
+.container{
+
+  display: flex;
+  align-items: center;
+  /* width: 266px; */
+  gap: 10px;
+  grid-auto-rows: min-content;
+  /* position: relative; */
+
+}
+
+.img{
+  width: 55px;
+  border-radius: 5px;
+}
+
+.blur{
+  background-color: white;
+  width: 55px;
+  opacity: 0.3;
+  filter: blur(1px);
+}
+
+.input{
+  height: 25px;
+  width: 140px;
+  border: 1 solid gray;
+  border-radius: 5px;
+}
+
+.btn{
+  /* height: 25px; */
+  /* padding: 5px; */
+  width: 140px;
+  border-radius: 5px;
+  background-color: green;
+  color:white;
+  position: relative;
+}
+
+.popover{
+  position: absolute;
+  border:3px solid #4B0082;
+  border-radius: 3px;
+  width: 150px;
+  height: 80px;
+  top:-90px;
+  left:-8px;
+}
+
+.popover-header{
+  font-size: medium;
+  color:#4B0082;
+}
+
+.popover-body{
+  font-size: small;
+  color:#4B0082;
+}
+.popover:after{
+  content: url("../img/keyboard_control_key_FILL0_wght400_GRAD0_opsz48.svg");
+  transform: rotate(90deg);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top:60px;
+  left:50px;
+  /* border-top-width: 0.5rem;
+border-right-width: 0.5rem;
+border-bottom-width: 0.5rem;
+border-left-width: 0px; */
+  /* content: " "; */
+  /* background-color: red; */
+  /* background-color: white; */
+  /* /* border: 20px solid transparent; */
+  /* border-top: 20px solid green;  */
+  /* font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+text-align: left;
+text-align: start;
+text-shadow: none;
+text-transform: none;
+letter-spacing: normal;
+word-break: normal;
+word-spacing: normal;
+white-space: normal;
+line-break: auto;
+font-size: .875rem;
+word-wrap: break-word; */
+}
+
+.hidden{
+  display: none;
+}
+
+.relative{
+  position: relative;
+}
